@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link href="../estilos.css" rel="stylesheet"  type="text/css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hablemos</title>
+</head>
+<body>
+    <nav>
+        <ul class="barra-nav">
+            <li class="nav-item"><a href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a href="proyectos.html">Proyectos</a></li>
+            <li class="nav-item"><a href="quiensoy.html">Quien soy</a></li>
+            <li class="nav-item"><a href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a href="hablemos.html">Hablemos!</a></li>
+        </ul>    
+    </nav>
+    <header>
+        <h1 class="titulo"> Contame tu idea!</h1>
+    </header>
+    <main class="contenedor-hablemos">
+        <div class="texto-contacto">
+            <h2> Acá te dejamos un espacio para que nos cuentes de que se trata tu proyecto.</h2>
+            <h2> Escribinos todo lo que te parezca importante que sepamos,
+                    nosotros lo estudiamos y te hablamos con la propuesta.</h2>
+        </div>
+        <div class="form-contacto">
+            <form action="enviar.php" method="post" enctype="text/plain">
+                <label for="name"> Nombre</label>
+                <input type="text" name="name"><br>
+                <label for="number"> Telefono</label>
+                <input type="text" name="number"><br>
+                <label for="mail"> E-mail</label>
+                <input type="text" name="mail"><br>
+                <label for="contacto"> ¿Como te contacto?</label>
+                <select name="Contacto">
+                    <option value="E-mail">E-mail</option>
+                    <option value="Llamada">Llamada</option>
+                    <option value="Whatsapp">Whatsapp</option>
+                </select><br>
+                <label for="idea"> <h2> Tu idea</h2></label>
+                <textarea name="idea"></textarea><br>
+                <h2> ¿Como me encontraste ?</h2>
+                <label for="instagram"> Instagram</label>
+                <input type="checkbox" name="instagram"><br>
+                <label for="facebook"> Facebook</label>
+                <input type="checkbox" name="facebook"><br>
+                <label for="amigo"> Un amigo</label>
+                <input type="checkbox" name="amigo"><br>
+                <input type="reset" value="Limpiar" class="boton">
+                <input type="submit" value="Enviar" class="boton">   
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p> Todos los derechos reservados a KC.ServiciosCreativos</p>        
+        <a href=https://www.instagram.com/ka.cort target="_blank">Instagram</a>
+    </footer>
+</body>
+</html>
