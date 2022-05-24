@@ -10,6 +10,7 @@ main{
     height: 100%;
 }
 body{
+    min-height: 100vh;
     background-image: url(./images/fondo-main.jpg);
     background-size: cover;
 }
@@ -89,6 +90,22 @@ footer{
     border-radius: 10px;
     border: solid rgb(141, 139, 139);
     background-color: rgb(230, 186, 149);
+}
+/* TRANSICIONES  */
+
+.titulo:hover{
+    font-size: 450%;
+    color: rgb(131, 103, 69);
+}
+.titulo{
+    transition: all 2.7s;
+}
+.presentacion:hover{
+    height: 150%;
+    font-size: 200%;
+}
+.presentacion{
+    transition: all 2s;
 }
 
 /* HABLEMOS ! */
