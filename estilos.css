@@ -4,353 +4,49 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;}
-
-/* ESTILO GENERAL  */
-main{
-    height: 100%;
-}
 body{
-    min-height: 100vh;
-    background-image: url(./images/fondo-main.jpg);
-    background-size: cover;
+    font-family: "Abel";
+    background-color: rgb(250, 235, 215);
 }
-.barra-nav {
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    font-family:"Abel";
-    text-decoration: none;
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-}
-.nav-item{
-    background-color: rgb(224, 216, 176);
-    text-decoration: none;
-    border-radius: 25%;
-    padding: 3%;
-    border: solid 3px rgb(230, 186, 149);
+.color-footer{
+    background-color: rgb(250, 235, 215);
 }
 header{
-    height: auto;
+    height: 150px;
     width: 100%;
-    margin-top: 5%;
     text-align: center;
-    font-size: 100%;
     font-family: "Abel";
 }
-
-/* ESTILO INDEX  */
-
-.contenedor-index{
-    margin-top: 5%;
-    height: 100%;
-    display: grid;
-    gap:10px;
-    grid-template-columns: 1fr 1fr 1/4fr 1fr 1fr ;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:  " . . . presentacion presentacion "
-                          " diseño diseño . presentacion presentacion "
-                          " diseño diseño . presentacion presentacion "
-                          "  . . . presentacion presentacion ";
-}
-.diseño{
-    margin-left: 5%;
-    background-color: rgba(162, 179, 139, 0.562);
-    font-family: "Abel";
-    border: 2px solid rgb(230, 186, 149);
-    text-align: center;
-    border-radius: 25px;
-    grid-area: diseño;
-}
-.presentacion{
-    margin-right: 5%;
-    padding-top: 5%;
-    text-align: center;
-    background-color: rgba(162, 179, 139, 0.562);
-    font-family: "Abel";
-    border-radius: 25px;
-    border: 2px solid rgb(230, 186, 149);
-    grid-area: presentacion;
-}
-footer{
-    bottom: 0%;
-    margin-top: 15%;
-    background-color: rgb(230, 186, 149);
-    font-family: "Abel";
-    min-height: 30px;
-    background-color: rgb(230, 186, 149) ;
-    font-family:"Abel" ;
-}
-.boton{
-    font-family: "Abel";
-    margin-top: 2%;
-    padding: 2%;
-    border-radius: 10px;
-    border: solid rgb(141, 139, 139);
-    background-color: rgb(230, 186, 149);
-}
-/* TRANSICIONES  */
-
-.titulo:hover{
-    font-size: 450%;
-    color: rgb(131, 103, 69);
+.navbar{
+    color: black;   
 }
 .titulo{
-    transition: all 2.7s;
+    padding-top:50px;
+}
+.nav-rosa{
+    background-color: rgb(202, 182, 156) ;
+}
+.boton{
+    border-radius: 5px;
+    background-color: rgb(231, 167, 146);
+    padding: 1%;
 }
 .presentacion:hover{
-    height: 150%;
-    font-size: 200%;
+    font-size: 150%;
+    transition: all 3s;
 }
-.presentacion{
-    transition: all 2s;
-}
-
-/* HABLEMOS ! */
-
-.contenedor-hablemos{
-    height: 100%;
-    display: grid;
-    gap:10px;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: repeat(4, 1fr); 
-    grid-template-areas: 
-                        ". form-contacto"
-                        "texto-contacto form-contacto"
-                        "texto-contacto form-contacto"
-                        ". form-contacto";
-}
-textarea{
-	width:100%;
-	height:auto;
-	border:1px solid rgb(230, 186, 149);
-	border-radius:3px;
-	background-color:rgb(230, 186, 149);			
-	resize:none;
-	display:block;
-}
-form input[type="text"],
-form input[type="email"]
-form input[type="name"]{
-	width:60%;
-	padding:3px 10px;
-	border:1px solid rgb(230, 186, 149);
-	border-radius:3px;
-	background-color:rgb(230, 186, 149);
-	margin:8px 0;
-	display:inline-block;
-}
-.form-contacto{
-    margin-right: 5%;
-    grid-area: form-contacto;
-    background-color:rgba(228, 233, 190, 0.596);
-    border: 7px solid rgb(230, 186, 149);
-    font-family: "Abel";
+.contenedor-general{
+    background-color: rgb(234, 250, 241 );
+    padding: 2%;
     text-align: center;
-    border-radius: 25px;
-}
-.texto-contacto{
-    margin-left: 5%;
-    grid-area: texto-contacto;
-    background-color:rgba(228, 233, 190, 0.596);
-    border: 7px solid rgb(230, 186, 149);
-    font-family: "Abel";
-    border-radius: 25px;
-    text-align: center;
-}
-
-/* PROYECTOS  */
-
-.contenedor-proyectos{
-    min-height: 100%;
-    display: grid;
-    gap:10px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "proyectos-1 proyectos-2"
-
-}
-.proyectos-1{
-            margin-left: 5% ;
-            background-color:rgba(162, 179, 139, 0.788) ;
-            font-family: "Abel";
-            margin-top: 10%;
-            padding:20px ;
-            border: 7px solid rgb(230, 186, 149) ;
-            border-radius: 25px;
-            grid-area: proyectos-1;
-    }
-.proyectos-2{
-            margin-right: 5%;
-            background-color:rgba(162, 179, 139, 0.788) ;
-            font-family: "Abel";
-            margin-top: 10%;
-            padding:20px ;
-            border: 7px solid rgb(230, 186, 149) ;
-            border-radius: 25px;
-            grid-area: proyectos-2;
-}
-
-/* QUIEN SOY  */
-
-.contenedor-quiensoy{
-    margin-top: 10%;
-    min-height: 100%;
-    display: grid;
-    gap:10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;   
-    grid-template-areas: "quien-soy conocimientos"
-}
-.quien-soy{
-    margin-left: 5%;
-    background-color:rgba(162, 179, 139, 0.801) ;
-    font-family: "Abel";
-    padding:20px ;
-    border-radius: 25px;
-    border: 10px solid rgb(230, 186, 149) ;
-    text-align: center;
-    grid-area: quien-soy;
-}
-.conocimientos{
-    margin-right: 5%;
-    background-color:rgba(162, 179, 139, 0.774) ;
-    font-family: "Abel";
-    padding:20px ;
-    border-radius: 25px;
-    border: 10px solid rgb(230, 186, 149) ;
-    text-align: center;
-    grid-area: conocimientos;
-}
-
-/* SERVICIOS */
-
-.contenedor-servicios{
-    min-height: 100%;
-    display: grid;
-    gap:10px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    grid-template-areas: " plan-1 plan-2 plan-3";
-}
-.plan-1{
-    margin-left: 5%;
-    background-color:rgba(162, 179, 139, 0.788) ;
-    font-family: "Abel";
-    padding:20px ;
-    border-radius: 25px;
-    border: 10px solid rgb(230, 186, 149) ;
-    grid-area: plan-1;
-}
-.plan-2{
-    background-color:rgba(162, 179, 139, 0.788) ;
-    font-family: "Abel";
-    padding:20px ;
-    border-radius: 25px;
-    border: 10px solid rgb(230, 186, 149) ;
-    grid-area: plan-2;
-}
-.plan-3{
-    margin-right: 5%;
-    background-color:rgba(162, 179, 139, 0.788) ;
-    font-family: "Abel";
-    padding:20px ;
-    border-radius: 25px;
-    border: 10px solid rgb(230, 186, 149) ;
-    grid-area: plan-3;
-}
-
-/* MEDIA  */
-
-@media only screen and (max-width: 599px){
-.barra-nav{
-    display: inline-block;
     justify-content: center;
-    width: 100%;
+    border-radius: 15px;
+    border: 4px solid rgb(202, 182, 156)  ;
 }
-.contenedor-index{
-    margin-top: 0%;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "nav"
-        "header"
-        "diseño"
-        "presentacion"
-        "footer";
-}
-.diseño{
-    margin: 0%;
-}
-.presentacion{
-    margin: 0%;
-}
-.contenedor-hablemos{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-     "nav"
-     "header" 
-     "texto-contacto"
-     "form-contacto"
-     "footer";
-}
-.form-contacto{
-    margin:0%
+.titulo-contenido{
+    padding-bottom: 10%;
+    font-weight: bold;
 }
 .texto-contacto{
-    margin:0%
-}
-.contenedor-proyectos{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "nav"
-    "header"
-    "proyectos-1"
-    "proyectos-2"
-    "footer";
-}
-.proyectos-1{
-    margin: 0%;
-}
-.proyectos-2{
-    margin: 0%;
-}
-.contenedor-quiensoy{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-            "nav"
-            "header"
-            "quien-soy" 
-            "conocimientos"
-            "footer";
-}
-.quien-soy{
-    margin: 0%;
-}
-.conocimientos{
-    margin: 0%;
-}
-.contenedor-servicios{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-            "nav"
-            "header"
-            "plan-1"
-            "plan-2"
-            "plan-3"
-            "footer";
-}
-.plan-1{
-    margin: 0%;
-}
-.plan-3{
-    margin: 0%;
-}
-
+    padding-top: 10%;
 }
