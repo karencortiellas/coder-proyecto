@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;}
+
+$color_boton:rgb(231, 167, 146);
+$color_footer:rgb(250, 235, 215);
+
+body{
+    font-family: "Abel";
+    background-color: rgb(250, 235, 215);
+    header{
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        font-family: "Abel";}
+    .color-footer{
+        background-color: $color_footer ;
+        }
+    .navbar{
+        color: black;   
+        }
+}
+.titulo{
+    padding-top:50px;
+}
+.nav-rosa{
+    background-color: rgb(202, 182, 156) ;
+}
+.boton{
+    border-radius: 5px;
+    background-color:$color_boton ;
+    padding: 1%;
+}
+
+.contenedor-general{
+    background-color: rgb(234, 250, 241 );
+    padding: 2%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 4px solid rgb(202, 182, 156)  ;
+        .titulo-contenido{
+            padding-bottom: 10%;
+            font-weight: bold;
+        }
+        .texto-contacto{
+            padding-top: 10%;
+        }
+}
+.presentacion:hover{
+    font-size: 150%;
+    transition: all 3s;
+}
